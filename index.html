@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103a32">
+  <meta name="description" content="Discover Kyrgyzstan’s cultural places, explore their stories, and help protect a shared inheritance. A local, interactive MURAS demonstration.">
+  <title>MURAS — A living map of Kyrgyzstan</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/vendor/leaflet/leaflet.js"></script>
+  <script defer src="assets/kyrgyzstan-boundary.js"></script>
+  <script defer src="assets/credits.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="state.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to exploration</a>
+  <header class="site-header">
+    <a class="brand" href="#places" aria-label="MURAS home"><img src="assets/favicon.svg" alt="" width="42" height="42"><span><strong>MURAS</strong><small>HERITAGE, REMEMBERED</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button data-tab="places" class="nav-tab active" aria-current="page">Explore Map</button>
+      <button data-tab="stories" class="nav-tab">Stories</button>
+      <button data-tab="events" class="nav-tab">Events</button>
+      <button data-tab="actions" class="nav-tab">Take Action</button>
+    </nav>
+    <div class="header-actions"><button class="btn text-btn" data-action="review">Demo Review Panel</button><button class="btn primary" data-action="story-form">+ Share a story</button></div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow"><span class="gold-line"></span> A LIVING CULTURAL MAP · KYRGYZSTAN</p><h1>Rooted in history.<br><em>Kept alive by us.</em></h1><p class="intro-description">Discover remarkable places, listen to their stories,<br class="desktop-break"> and be part of what comes next.</p></div>
+      <div class="intro-aside"><div class="heritage-seal" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="35" stroke-dasharray="1 5"/><path d="M25 62 43 36 54 51 65 30 79 62ZM38 62V74H64V62M45 74V64H56V74"/></svg></div><div><span class="eyebrow">ONE SHARED INHERITANCE</span><p>Places to discover.<br>Stories worth carrying forward.</p><button class="subtle-link" data-action="guide">Start the 90-second demo</button></div></div>
+    </section>
+
+    <div class="workspace" id="workspace">
+      <aside class="panel discovery-panel" aria-label="Discover heritage">
+        <div class="discovery-head"><label class="search-box"><span data-icon="search"></span><input id="search" type="search" placeholder="Find a place, a story…" aria-label="Search places, stories, events and actions" maxlength="120"><kbd>/</kbd></label>
+        <div class="section-heading"><h2 id="list-title">Heritage places</h2><span id="list-count" class="count">6</span></div>
+        <label class="filter-label" for="category-filter">Explore by category</label><select id="category-filter" aria-label="Filter map and results"></select></div>
+        <div id="results" class="results" aria-live="polite"></div>
+        <div class="discovery-footer"><span data-icon="shield"></span><span>Sourced places. Personal memories.<br>Responsible community action.</span></div>
+      </aside>
+
+      <section class="panel map-panel" aria-label="Interactive map of Kyrgyzstan">
+        <div class="map-toolbar"><div><span class="eyebrow">THE HERITAGE ATLAS</span><h2>Explore Kyrgyzstan</h2></div><button class="icon-btn" data-action="fit-map" title="Show all places" aria-label="Show all places on map"><span data-icon="expand"></span></button></div>
+        <div class="map-area">
+          <div id="map" aria-label="Heritage map"></div>
+          <div id="offline-map" hidden><div class="offline-heading"><span class="eyebrow">KYRGYZSTAN</span><span>Offline atlas · public places</span></div><svg id="atlas-svg" preserveAspectRatio="none" viewBox="0 0 900 600" aria-label="Offline geographical map of Kyrgyzstan"></svg><div id="offline-pins"></div><div class="offline-credit">Natural Earth · illustrative boundary</div></div>
+          <div class="map-mode"><span class="map-indicator"></span><span id="map-status">Loading map…</span><button id="map-mode-button" data-action="toggle-map">Use offline atlas</button></div>
+          <div class="map-legend"><span><i class="legend-monument"></i>Monument</span><span><i class="legend-museum"></i>Museum</span><span><i class="legend-site"></i>Historic site</span><span><i class="legend-report"></i>Unverified report</span></div>
+        </div>
+        <div class="map-caption"><span data-icon="compass"></span><span>Follow a place. Find its story.</span><span class="map-caption-note">Public heritage locations</span></div>
+      </section>
+
+      <aside class="panel detail-panel" id="details" aria-label="Selected place details" aria-live="polite"></aside>
+    </div>
+
+    <section class="below-atlas"><div><span class="eyebrow">MORE THAN A PIN ON A MAP</span><h2>A past to discover. A future to protect.</h2></div><div class="feature-links"><button data-tab="stories"><span data-icon="book"></span><span><strong>Carry a story forward</strong><small>History, craft & personal memories</small></span></button><button data-tab="events"><span data-icon="calendar"></span><span><strong>Culture is happening</strong><small>Exhibitions & museum programmes</small></span></button><button data-tab="actions"><span data-icon="hands"></span><span><strong>Care, with a clear purpose</strong><small>Report, review & help responsibly</small></span></button></div></section>
+  </main>
+
+  <footer class="site-footer"><span><strong>MURAS</strong> · Heritage belongs to our shared future.</span><div><span class="local-label">Local interactive demo</span><button data-action="sources">Sources & image credits</button><button data-action="reset">Reset Demo Data</button></div></footer>
+  <div id="guide-bar" class="guide-bar" hidden></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="modal-top"><span class="eyebrow">MURAS · EXPLORE & PARTICIPATE</span><button class="icon-btn" data-action="close-modal" aria-label="Close dialog"><span data-icon="close"></span></button></div><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript">Enable JavaScript to explore the interactive map and local demonstration.</div></noscript>
+</body>
+</html>

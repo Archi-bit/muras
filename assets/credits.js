@@ -1,0 +1,85 @@
+window.MURAS_CREDITS = [
+  {
+    "id": "burana",
+    "path": "assets/photos/burana.jpg",
+    "title": "2015-09-06-103700 - Balasagun - Burana-Turm.JPG",
+    "author": "Zossolino",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015-09-06-103700_-_Balasagun_-_Burana-Turm.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/2015-09-06-103700_-_Balasagun_-_Burana-Turm.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "sulaiman",
+    "path": "assets/photos/sulaiman.jpg",
+    "title": "Sulayman Mountain, Osh.jpg",
+    "author": "Adam Harangozó",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sulayman_Mountain,_Osh.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sulayman_Mountain%2C_Osh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "history-museum",
+    "path": "assets/photos/history-museum.jpg",
+    "title": "817 - State Historical Museum, Bishkek.jpg",
+    "author": "Allan Grey",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:817_-_State_Historical_Museum,_Bishkek.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/817_-_State_Historical_Museum%2C_Bishkek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "art-museum",
+    "path": "assets/photos/art-museum.jpg",
+    "title": "National Museum of Fine Arts Gapar Aitiev, 2024-09-11.jpg",
+    "author": "Incall",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Fine_Arts_Gapar_Aitiev,_2024-09-11.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/National_Museum_of_Fine_Arts_Gapar_Aitiev%2C_2024-09-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "cholpon-ata",
+    "path": "assets/photos/cholpon-ata.jpg",
+    "title": "Petroglyph Museum of Cholpon-Ata 10.jpg",
+    "author": "Bgag",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petroglyph_Museum_of_Cholpon-Ata_10.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Petroglyph_Museum_of_Cholpon-Ata_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "tash-rabat",
+    "path": "assets/photos/tash-rabat.jpg",
+    "title": "Tash Rabat in mountains.jpg",
+    "author": "Firespeaker",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tash_Rabat_in_mountains.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tash_Rabat_in_mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized to 1280 pixels; displayed with a crop in the interface."
+  },
+  {
+    "id": "kyrgyzstan-boundary",
+    "path": "assets/kyrgyzstan-boundary.js",
+    "title": "Natural Earth 1:110m country boundary",
+    "author": "Natural Earth contributors",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "sourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "changes": "Kyrgyzstan feature extracted; properties reduced."
+  }
+]
+;
